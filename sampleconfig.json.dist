@@ -1,0 +1,21 @@
+{
+    "vars": {
+        "myKey1": "chimpanzee",
+        "myKey2": "gorilla",
+        "myKey3": "orangutan",
+        "myKey4": "homo sapiens",
+        "monkey": "harambe"
+    },
+    "mappings": {
+        "inputFile1.tmp": "outputFile1",
+        "inputFile2.temp": "outputFile2",
+        "./inputDir": "./outputDir",
+        "/home/john/absolute/path/inputDir": "/home/john/absolute/path/outputDir"
+    },
+    "options": {
+        "templateExtensions": [
+            "tmp",
+            "temp"
+        ]
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "copywriter",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard --fix",
+    "test": "standard && ava --verbose",
+    "coverage": "nyc npm test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^1.0.0",
+    "lodash": "^4.17.2",
+    "yargs": "^6.5.0"
+  },
+  "bin": {
+    "copywriter": "index.js"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "nyc": "^10.0.0",
+    "proxyquire": "^1.7.10",
+    "standard": "^8.6.0"
+  }
+}
