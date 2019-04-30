@@ -4,7 +4,8 @@
         "myKey2": "gorilla",
         "myKey3": "orangutan",
         "myKey4": "homo sapiens",
-        "monkey": "harambe"
+        "monkey": "harambe",
+        "user": "$ENV.USER"
     },
     "mappings": {
         "inputFile1.tmp": "outputFile1",

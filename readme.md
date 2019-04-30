@@ -111,6 +111,11 @@ my keys:
     - {{ key2 }}
 ```
 
+## System Environment Variables
+
+The system envs can be picked up using `$ENV.envname` style value. For instance to get the home directory you should write the variable like `"myHOmeDir": "$ENV.home"`.
+
+
 ## Uninstallation
 
 Locally
