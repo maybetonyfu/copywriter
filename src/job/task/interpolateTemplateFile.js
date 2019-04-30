@@ -4,7 +4,6 @@ const SYSTEM_ENV_TERMINAL = "$ENV.";
 function interpolateTemplateFile(payload) {
   // Replace system envs
   let vars = {};
-  console.log(payload.vars);
   for ([key, value] of Object.entries(payload.vars)) {
     if (isMarkedAsSystemEnv(value)) {
       let systemEnvKey = getSystemEnvKey(value);
@@ -25,6 +24,7 @@ function interpolateTemplateFile(payload) {
 }
 
 function isMarkedAsSystemEnv(val) {
+  if (typeof val !== 'string') return false
   return val.startsWith(SYSTEM_ENV_TERMINAL);
 }
 
